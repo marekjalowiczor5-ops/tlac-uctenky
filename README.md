@@ -7,7 +7,7 @@ Jednoduchá konzolová aplikace pro vytváření účtenek. Verze **1.0.0**.
 - Manuel Pokraj
 - Honza Michel
 - Marek Jalowiczor
-- Maksym – doplňte celé jméno
+- Maksym Kucher
 
 ## Požadavky
 
