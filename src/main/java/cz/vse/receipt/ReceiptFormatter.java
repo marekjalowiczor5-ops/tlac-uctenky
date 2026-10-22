@@ -29,6 +29,8 @@ public class ReceiptFormatter {
         }
 
         appendLine(sb, doubleSeparator);
+        int pieces = receipt.getItems().stream().mapToInt(Item::quantity).sum();
+        appendLine(sb, twoColumns("Počet kusů", String.valueOf(pieces)));
         appendLine(sb, twoColumns("CELKEM", money(receipt.total(), shop)));
         appendLine(sb, twoColumns("z toho DPH " + stripZeros(shop.vatRate()) + " %",
                 money(receipt.vat(shop.vatRate()), shop)));
