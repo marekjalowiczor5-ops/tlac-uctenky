@@ -1,4 +1,4 @@
-# receipt-printer
+# tlac-uctenky
 
 Jednoduchý konzolový nástroj pro tisk účtenky (jako ze samoobsluhy).
 Verze: **1.0.0** (sémantické verzování `MAJOR.MINOR.PATCH`).
