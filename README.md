@@ -24,6 +24,10 @@ java -jar target/receipt-printer-1.0.0.jar
 
 Program načítá údaje o obchodě ze souboru `shop.properties`. Položky se zadávají po jedné ve formátu `název;počet;cena`, například `Mléko;2;19,90`. Prázdný řádek ukončí zadávání a vytiskne účtenku.
 
+## Zadávání nákupu
+
+Každá položka na jeden řádek ve tvaru `název;počet;cena`
+
 ## Vytvoření nové verze
 
 1. Změňte číslo verze v souboru `pom.xml` a v README.
