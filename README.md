@@ -5,10 +5,10 @@ Verze: **1.0.0** (sémantické verzování `MAJOR.MINOR.PATCH`).
 
 ## Autoři
 
-Manuel Pokraj
-Honza Michel
-Marek Jalowiczor
-Maksym
+- Manuel Pokraj
+- Honza Michel
+- Marek Jalowiczor
+- Maksym Kucher
 ## Požadavky
 
 - Java 17 nebo novější
@@ -60,7 +60,7 @@ Prázdný řádek ukončí nákup a vytiskne účtenku. Chybný řádek se ohlá
 mvn test
 ```
 
-## Jak vydat novou verzi
+## Jak vydat novou verzi (viz zadání)
 
 1. V `pom.xml` změňte `<version>` (např. `1.0.0` na `1.0.1`) a případně verzi v README.
 2. Spusťte `mvn clean package` a ověřte, že testy projdou.
