@@ -5,10 +5,10 @@ Verze: **1.0.0** (sémantické verzování `MAJOR.MINOR.PATCH`).
 
 ## Autoři
 
-- Jméno Příjmení (@github-uzivatel)
-- Jméno Příjmení (@github-uzivatel)
-- Jméno Příjmení (@github-uzivatel)
-
+Manuel Pokraj
+Honza Michel
+Marek Jalowiczor
+Maksym
 ## Požadavky
 
 - Java 17 nebo novější
