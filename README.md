@@ -5,7 +5,7 @@ Jednoduchá konzolová aplikace pro vytváření účtenek. Verze **1.0.1**.
 ## Autoři
 
 - Manuel Pokraj
-- Honza Michel
+- Jan Michel
 - Marek Jalowiczor
 - Maksym Kucher
 
