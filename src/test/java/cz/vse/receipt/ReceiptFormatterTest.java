@@ -59,4 +59,12 @@ class ReceiptFormatterTest {
         assertEquals("abcd…", ReceiptFormatter.truncate("abcdefgh", 5));
         assertEquals("abc", ReceiptFormatter.truncate("abc", 5));
     }
+
+    @Test
+    void showsNumberOfPieces() {
+        Receipt r = new Receipt();
+        r.add(new Item("A", 2, new BigDecimal("10")));
+        r.add(new Item("B", 3, new BigDecimal("5")));
+        assertTrue(render(r).contains("Počet kusů"));
+    }
 }
