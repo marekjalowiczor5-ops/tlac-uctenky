@@ -1,6 +1,6 @@
 # Tlač-účtenky
 
-Jednoduchá konzolová aplikace pro vytváření účtenek. Verze **1.0.0**.
+Jednoduchá konzolová aplikace pro vytváření účtenek. Verze **1.0.1**.
 
 ## Autoři
 
