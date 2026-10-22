@@ -15,7 +15,6 @@ class ReceiptEdgeCasesTest {
         }
         assertEquals(new BigDecimal("10.00"), r.total());
     }
-
     @Test
     void parserTrimsWhitespace() {
         Item item = ItemParser.parse("  Káva ; 2 ; 45,5 ");
