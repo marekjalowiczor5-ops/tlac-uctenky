@@ -1,69 +1,41 @@
-# tlac-uctenky
+# Tlač-účtenky
 
-Jednoduchý konzolový nástroj pro tisk účtenky (jako ze samoobsluhy).
-Verze: **1.0.0** (sémantické verzování `MAJOR.MINOR.PATCH`).
+Jednoduchá konzolová aplikace pro vytváření účtenek. Verze **1.0.0**.
 
 ## Autoři
 
 - Manuel Pokraj
 - Honza Michel
 - Marek Jalowiczor
-- Maksym Kucher
+- Maksym – doplňte celé jméno
+
 ## Požadavky
 
-- Java 17 nebo novější
-- Maven 3.8+ (jen pro sestavení)
+Java 17 nebo novější. Maven 3.8+ pro sestavení projektu.
 
-## Sestavení
+## Sestavení a spuštění
+
+V kořenové složce projektu spusťte:
 
 ```bash
 mvn clean package
-```
-
-Vznikne `target/receipt-printer-1.0.0.jar` (testy se spustí automaticky).
-
-## Spuštění (bez IDE)
-
-Z kořene projektu (kde leží `shop.properties`):
-
-```bash
 java -jar target/receipt-printer-1.0.0.jar
 ```
 
-Jiný konfigurační soubor lze předat jako argument:
+Program načítá údaje o obchodě ze souboru `shop.properties`. Položky se zadávají po jedné ve formátu `název;počet;cena`, například `Mléko;2;19,90`. Prázdný řádek ukončí zadávání a vytiskne účtenku.
 
-```bash
-java -jar target/receipt-printer-1.0.0.jar /cesta/k/obchod.properties
-```
+## Vytvoření nové verze
 
-Na Windows, pokud se špatně zobrazují české znaky, spusťte nejdřív `chcp 65001`.
-
-## Konfigurace obchodu (`shop.properties`)
-
-Soubor v UTF-8 s údaji, které se opakují na každé účtence:
-`name`, `address`, `ico`, `dic`, `vatRate` (v %, ceny jsou včetně DPH), `currency`, `footer`.
-
-## Zadávání nákupu
-
-Každá položka na jeden řádek ve tvaru `název;počet;cena`, například:
-
-```
-Mléko;2;19,90
-Chléb;1;32.50
-```
-
-Prázdný řádek ukončí nákup a vytiskne účtenku. Chybný řádek se ohlásí a ignoruje.
-
-## Testy
-
-```bash
-mvn test
-```
-
-## Jak vydat novou verzi (viz zadání)
-
-1. V `pom.xml` změňte `<version>` (např. `1.0.0` na `1.0.1`) a případně verzi v README.
+1. Změňte číslo verze v souboru `pom.xml` a v README.
 2. Spusťte `mvn clean package` a ověřte, že testy projdou.
-3. Commit: `git commit -am "Release 1.0.1"`
-4. Tag: `git tag v1.0.1 && git push && git push --tags`
-5. (Volitelně) na GitHubu vytvořte Release z tagu a přiložte JAR z `target/`.
+3. Uložte změny do Gitu a vytvořte tag nové verze, například `v1.0.1`:
+
+```bash
+git add .
+git commit -m "Release 1.0.1"
+git tag v1.0.1
+git push
+git push --tags
+```
+
+Novou verzi lze následně zveřejnit na GitHubu v sekci Releases.
